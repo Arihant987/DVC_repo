@@ -12,7 +12,7 @@
 12) git add--commit(second version)
 13) repeat for third step
 
-# Git will keep track of s3 but not data data have to be changed through dvc
-# Due to git mycode,s3 and data.dvc is changing and then md5 id dvc know something change so we do dvc pull which change data
-# When dvc add-commit data.dvc is changed and due to push data is changed
+# Git will keep track of s3 but not data{gitignore} data have to be changed through dvc
+# Due to git{checkout} mycode,s3 and data.dvc is changing and then md5 id dvc know something change so we do dvc pull which change data
+# When dvc add-commit data.dvc is changed and 2 files add in cache and due to push s3 is changed
 # Also in .dvc file in cache{gitignore} md5 id and data are added which are maintained constant throughout
