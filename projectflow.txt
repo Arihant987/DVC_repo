@@ -3,3 +3,16 @@
 3) add and commit before initializing DVC
 # pip install dvc
 5) dvc init
+6) dvc remote -d myremote s3{url} tell remote to dvc like remote origin of github dvc add remote -d myremote s3
+7) dvc add data, do versioning error remove git and then do git add 2 files for tracking
+8) dvc commit dvc push
+9) Do a git add-commit-push to mark this stage as first version of data
+10) Now add new row and check status using dvc status
+11) dvc commit dvc push
+12) git add--commit(second version)
+13) repeat for third step
+
+# Git will keep track of s3 but not data data have to be changed through dvc
+# Due to git mycode,s3 and data.dvc is changing and then md5 id dvc know something change so we do dvc pull which change data
+# When dvc add-commit data.dvc is changed and due to push data is changed
+# Also in .dvc file in cache{gitignore} md5 id and data are added which are maintained constant throughout
