@@ -8,7 +8,13 @@ data={
 }
 df=pd.DataFrame(data)
 
-
+# add new row 
+new_row={
+    'name':'gf',
+    'age':19,
+    'city':'San Francisco'
+}
+df.loc[len(df.index)]=new_row 
 
 
 
