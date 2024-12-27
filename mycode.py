@@ -15,7 +15,13 @@ new_row={
     'city':'San Francisco'
 }
 df.loc[len(df.index)]=new_row 
-
+# add more new row
+more_row={
+    'name':'gf',
+    'age':25,
+    'city':'Chicago'
+}
+df.loc[len(df.index)]=more_row
 
 
 
