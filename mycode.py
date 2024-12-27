@@ -10,7 +10,7 @@ df=pd.DataFrame(data)
 
 # add new row 
 new_row={
-    'name':'gf',
+    'name':'exgf',
     'age':19,
     'city':'San Francisco'
 }
